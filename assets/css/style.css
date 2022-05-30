@@ -1,21 +1,74 @@
 /* Creates CSS variables */
 :root {
     /* I don't want it white- an off white; eggshell maybe */
-    --main-bg-color: white;
-    --sec-title-color: red;
+    --main-bg-color: #f0ead6;
+    --sec-title-color: rgb(140, 8, 8);
 }
 
 /* This is all rough putting in what I need to code- not including code for <header> attributes and such */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    color: #A9A9A9;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
     /* Create a flexbox for the header w/ child elements h1 and nav */
+    background-color: var(--main-bg-color);
+    padding: 10px 40px 10px 0;
     display: flex;
+    flex-direction: column;
+    margin: 30px 750px 10px 0;
+    align-items: flex-end;
+    border-top: black 1px solid;
+    border-right: black 6px double;
+    border-bottom: black 6px double;
 }
 
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--sec-title-color);
+}
 
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    padding: 10px 0 10px 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 10px 750px;
+    align-items: flex-start;
+    border-top: black 1px solid;
+    border-left: black 6px double;
+    border-bottom: black 6px double;
+}
 
 /* Styles the Hero section */
 .hero {
