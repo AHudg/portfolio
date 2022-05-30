@@ -1,0 +1,82 @@
+/* Creates CSS variables */
+:root {
+    /* I don't want it white- an off white; eggshell maybe */
+    --main-bg-color: white;
+    --sec-title-color: red;
+}
+
+/* This is all rough putting in what I need to code- not including code for <header> attributes and such */
+* {
+
+}
+
+header {
+    /* Create a flexbox for the header w/ child elements h1 and nav */
+    display: flex;
+}
+
+
+
+/* Styles the Hero section */
+.hero {
+    /* Shouldn't need a flexbox- it will need a pseudo-class for :hover; Other than that it should just the background image attributes */
+}
+/* End of Hero section styling */
+
+
+
+/* Styles the About Me section */
+.about {
+    /* Create this a flexbox and have it oriented as columns to oragnize the two rows of the about me section vertically*/
+    display: flex;
+    flex-direction: column;
+}
+/* End of the About Me styling */
+
+
+
+/* Styles the Project section */
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Styles the Contact section. */
+.contact-head {
+    /* Configures the Contact Me! center image inside the pop art thought box */
+}
+
+.contact-info {
+
+}
+/* End of the Contact section styling */
+
+
+
+/* Styles the Footer section */
+.footer {
+
+}
+/* End of the Footer section styling */
+
+
+
+/* Utility Styles */
+.section-title {
+    /* Configures the About Me and Projects headline */
+}
+
+.flexbox {
+    /*Configures the horitzontal flexbox that the text + image will be used in about me section */
+}
+
+.flex-text {
+    /* Styles the text for the horizontal flexboxes */
+}
+
+.flex-img {
+    /* Styles the image for the horizontal flexboxes */
+}
+/* End of Utility Style */
