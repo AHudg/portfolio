@@ -19,20 +19,28 @@ body {
 
 header {
     /* Create a flexbox for the header w/ child elements h1 and nav */
-    background-color: var(--main-bg-color);
-    padding: 10px 40px 10px 0;
+
+    /* This is for the original idea where my header would be the page pop-out like the other sections */
+    /* background-color: var(--main-bg-color);
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    margin: 30px 750px 10px 0;
+    margin-top: 15px;
+    width: 35%;
     align-items: flex-end;
-    border-top: black 1px solid;
+    border-top: black 2px solid;
     border-right: black 6px double;
     border-bottom: black 6px double;
+    font-family: 'BadaBoom BB', Helvetica, sans-serif; */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-family: 'BadaBoom BB', Helvetica, sans-serif;
+    height: 20px;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
+    font-size: 25px;
     color: var(--sec-title-color);
 }
 
@@ -42,7 +50,8 @@ header a {
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 7px 7px;
+    flex-wrap: flex;
 }
 
 header nav ul {
@@ -60,76 +69,37 @@ header nav ul li a {
 
 footer {
     background-color: var(--main-bg-color);
-    padding: 10px 0 10px 40px;
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0 10px 750px;
-    align-items: flex-start;
-    border-top: black 1px solid;
+    padding: 10px 20px;
+    width: 35%;
+    float: right;
+    border-top: black 2px solid;
     border-left: black 6px double;
     border-bottom: black 6px double;
+    font-family: 'BadaBoom BB', Helvetica, sans-serif;
 }
 
 /* Styles the Hero section */
 .hero {
-    /* Shouldn't need a flexbox- it will need a pseudo-class for :hover; Other than that it should just the background image attributes */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.runner {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.runner img {
+    width: 99%;
+    justify-content: space-between;
+}
+
+.hook {
+    display: flex;
+    height:500px;
+    margin: 10px;
 }
 /* End of Hero section styling */
-
-
-
-/* Styles the About Me section */
-.about {
-    /* Create this a flexbox and have it oriented as columns to oragnize the two rows of the about me section vertically*/
-    display: flex;
-    flex-direction: column;
-}
-/* End of the About Me styling */
-
-
-
-/* Styles the Project section */
-.projects {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-/* Styles the Contact section. */
-.contact-head {
-    /* Configures the Contact Me! center image inside the pop art thought box */
-}
-
-.contact-info {
-
-}
-/* End of the Contact section styling */
-
-
-
-/* Styles the Footer section */
-.footer {
-
-}
-/* End of the Footer section styling */
-
-
-
-/* Utility Styles */
-.section-title {
-    /* Configures the About Me and Projects headline */
-}
-
-.flexbox {
-    /*Configures the horitzontal flexbox that the text + image will be used in about me section */
-}
-
-.flex-text {
-    /* Styles the text for the horizontal flexboxes */
-}
-
-.flex-img {
-    /* Styles the image for the horizontal flexboxes */
-}
-/* End of Utility Style */
