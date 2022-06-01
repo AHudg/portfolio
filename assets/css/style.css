@@ -84,22 +84,37 @@ footer {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    height: 900px;
 }
 
 .runner {
+    margin: 20px 0;
+    flex:1;
     display: flex;
-    flex-direction: row;
+    justify-content:center
+}
+
+.runner div {
+    flex: 25%;
     margin: 10px;
 }
 
+#headline {
+    flex: 49%;
+}
+
 .runner img {
-    width: 99%;
-    justify-content: space-between;
+    width: auto;
+    border: 8px ridge black;
 }
 
 .hook {
     display: flex;
     height:500px;
     margin: 10px;
+}
+
+.hook img {
+    width: 99%;
 }
 /* End of Hero section styling */
