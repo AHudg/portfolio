@@ -18,7 +18,7 @@ body {
 
 header {
     /* Create a flexbox for the header w/ child elements .logo and nav */
-    font-family: 'Apple Chancery';
+    font-family: 'Austria';
     flex-direction: column;
     width:10vw;
     align-items: center;
