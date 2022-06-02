@@ -8,19 +8,26 @@
         <title>Andrew Dawson - Portfolio</title>
     </head>
     
+    <!-- <body> is made a flexbox using CSS to create a "sticky" sidebar header -->
+    <!-- Contains two flex children: <header> and <main> -->
     <body>
-        <!--Beginning of Header-->
-        <!--Creating a flexbox header w/ two flex items inside-->
-        <!--Float the header left in total. Header with navigation links under I belive-->
+        <!-- Beginning of Header -->
+        <!-- <header> is a flexbox w/ two flex children <h1> and <ul> -->
         <header>
 
+            <!-- Places the logo / reference to home page -->
+            <a href="#home">
+                <img src="./assets/images/littlelogo.jpg"/>
+            </a>
+
+            <!--Creates the navigation links on the header-->
             <nav>
                 <!--Creates my navigation links for the website-->
                 <ul>
                     <!--Utilizing an unordered list for the pages-->
                     <li>
                         <!--List Item Element-->
-                        <a href="#about-me">About Me</a>
+                        <a href="#about-me">About</a>
                         <!--Anchor Element to link the corresponding section-->
                     </li>
                     <li>
@@ -29,50 +36,92 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
                 </ul>
             </nav>
+
         </header>
         <!--End of Header/Navigation-->
 
-
-
-        <!--Beginning of Hero--->
-        <section class="hero">
-
-         </section>
-         <!--End of the Hero-->
-
-
-
-         <!-- Beginning of the About Me-->
-         <!--Creates the section to be a flexbox-->
-         <section id="about-me" class="about">
-
-         </section>
-         <!--End of the About Me-->
+        <main>
+            <!--Beginning of Hero--->
+            <section class="hero">
+                <img src="./assets/images/Placeholder_Hero.jpg"/>
+            </section>
+            <!--End of the Hero-->
 
 
 
-         <!--Beginning of the Projects-->
-         <section id="projects" class="projects">
+            <!-- Beginning of the About Me-->
+            <!--Creates the section to be a flexbox-->
+            <section id="about-me" class="about">
+                <div class="header-box">
+                    <h2>About Me</h2>
+                </div>
+                <article class="about-info">
+                    <h3>Andrew Dawson Hudgins</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quae dolorem quos, exercitationem fugiat similique asperiores deserunt, quas alias quis incidunt minus libero tempora eius quo eligendi dolorum qui culpa.</p>
+                </article>
+            </section>
+            <!--End of the About Me-->
 
-         </section>
-         <!--End of the Projects-->
+
+
+            <!--Beginning of the Projects-->
+            <section id="projects" class="projects">
+                <div class="header-box-white">
+                    <h2>Projects</h2>
+                </div>
+                <article class="parent-flex">
+                    <div>
+                    <!-- Big left flex box -->
+                    </div>
+                    <div class="child-flex">
+                    <!-- Nested flex boxes on right -->
+                        <div>
+                        <!-- Big top flex box -->
+                        </div>
+                        <div class="grandchild-flex">
+                        <!-- Nested flex boxes on bottom -->
+                            <div>
+                            <!-- Left flex box -->
+                            </div>
+                            <div>
+                            <!-- Right flex box -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!--End of the Projects-->
 
 
 
-         <!--Beginning of the Contact Me-->
-         <section id="contact" class="contact">
+            <!--Beginning of the Contact Me-->
+            <section id="contact" class="about">
+                <div class="header-box">
+                    <h2>Contact Me!</h2>
+                </div>
+                <div>
+                <!--Contact Information-->
+                </div>
+                <div>
+                <!--Contact Form/Message from Customers-->
+                </div>
+            </section>
+            <!--End of the Contact Me -->
 
-         </section>
-         <!--End of the Contact Me -->
+            <!--Beginning of Resume-->
 
-         
+            <!--End of Resume-->
 
          <!--Start of the Footer Section-->
          <footer>
              <h2>Andrew Dawson's Programming Portfolio</h2>
          </footer>
          <!--End of the Footer Section-->
+        </main>
     </body>
 </html>

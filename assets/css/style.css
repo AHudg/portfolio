@@ -1,6 +1,6 @@
 /* Creates CSS variables */
 :root {
-
+    background-color: black;
 }
 
 /* This is all rough putting in what I need to code- not including code for <header> attributes and such */
@@ -11,55 +11,191 @@
 }
 
 body {
-    color: black;
+    color: #ffff;
     font-family: Helvetica, Arial, sans-serif;
+    display: flex;
 }
 
 header {
-    /* Create a flexbox for the header w/ child elements h1 and nav */
-
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
+    /* Create a flexbox for the header w/ child elements .logo and nav */
     font-family: 'Apple Chancery';
-    height: 20px;
+    flex-direction: column;
+    width:10vw;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    height:30vw;
+}
+
+header a img {
+    width: 50%;
+    margin: 40px auto 20px auto;
 }
 
 header h1 {
+    font-size: 25px;
+    margin: 40px 0 20px 0;
+}
+
+header nav {
+    margin: 7px 7px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header li {
+    padding: 10px 30px;
+    background-color: black;
+    transition: background-color 1s ease;
+}
+
+header li:hover {
+    background-color: white;
+}
+
+li:hover a {
+    color: black;
+}
+
+header nav ul li a {
+    font-weight: lighter;
     font-size: 25px;
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color: #ffff;
+    text-align: center;
 }
 
-header nav {
-    margin: 7px 7px;
-    flex-wrap: flex;
+main {
+    width: 70vw;
+    display:flex;
+    flex-direction: column;
 }
 
-header nav ul {
-    display: flex;
-    flex-wrap: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-}
 
-header nav ul li a {
-    padding: 10px;
-    font-weight: lighter;
-}
 
-footer {
-    padding: 10px;
-    float: right;
-    font-family: 'Apple Chancery', sans-serif;
-    font-size:10px;
+/* Styles the Hero section */
+.hero {
+    background-color: black;
+    width: 70vw;
+}
+/* End of Hero section styling */
+
+
+
+/* Styles the About section */
+.about {
+    background-color: white;
+    width: 70vw;
     color:black;
 }
 
-/* Styles the Hero section */
+.header-box {
+    width: 30%;
+    height: auto;
+    margin: 50px -1px;
+    padding: 20px 100px 20px 40px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 40px;
+    font-family: 'Apple Chancery';
+}
 
-/* End of Hero section styling */
+.about-info {
+    margin: 10px;
+}
+
+.about-info h3 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+/* End of About section styling */
+
+
+
+/* Styling the Project Section */
+.header-box-white {
+    width: 30%;
+    height: auto;
+    margin: 50px -1px;
+    padding: 20px 40px 20px 100px;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    font-family: 'Apple Chancery';
+    float: right;
+}
+
+.parent-flex {
+    display: flex;
+}
+
+.parent-flex > :first-child {
+    background-color: red;
+    height: 1000px;
+    width: 50%;
+}
+
+.child-flex {
+    background-color:blue;
+    height: 1000px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.child-flex > :first-child {
+    background-color: yellow;
+    height: 40%;
+    width: 80%;
+}
+
+.grandchild-flex {
+    background-color: pink;
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grandchild-flex div {
+    background-color: black;
+    height: 90%;
+    width: 40%;
+}
+/* End of styling Projects section */
+
+
+
+/* Styling Contact Section */
+
+/* End of styling Contact section */
+
+
+
+footer {
+    padding: 10px;
+    font-family: 'Apple Chancery', sans-serif;
+    font-size:10px;
+    color:#ffff;
+}
+
+footer h2 {
+    float: right;
+}
