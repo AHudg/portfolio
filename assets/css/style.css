@@ -1,8 +1,6 @@
 /* Creates CSS variables */
 :root {
-    /* I don't want it white- an off white; eggshell maybe */
-    --main-bg-color: #f0ead6;
-    --sec-title-color: rgb(140, 8, 8);
+
 }
 
 /* This is all rough putting in what I need to code- not including code for <header> attributes and such */
@@ -13,35 +11,22 @@
 }
 
 body {
-    color: #A9A9A9;
+    color: black;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
     /* Create a flexbox for the header w/ child elements h1 and nav */
 
-    /* This is for the original idea where my header would be the page pop-out like the other sections */
-    /* background-color: var(--main-bg-color);
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    width: 35%;
-    align-items: flex-end;
-    border-top: black 2px solid;
-    border-right: black 6px double;
-    border-bottom: black 6px double;
-    font-family: 'BadaBoom BB', Helvetica, sans-serif; */
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    font-family: 'BadaBoom BB', Helvetica, sans-serif;
+    font-family: 'Apple Chancery';
     height: 20px;
 }
 
 header h1 {
     font-size: 25px;
-    color: var(--sec-title-color);
 }
 
 header a {
@@ -68,53 +53,13 @@ header nav ul li a {
 }
 
 footer {
-    background-color: var(--main-bg-color);
-    padding: 10px 20px;
-    width: 35%;
+    padding: 10px;
     float: right;
-    border-top: black 2px solid;
-    border-left: black 6px double;
-    border-bottom: black 6px double;
-    font-family: 'BadaBoom BB', Helvetica, sans-serif;
+    font-family: 'Apple Chancery', sans-serif;
+    font-size:10px;
+    color:black;
 }
 
 /* Styles the Hero section */
-.hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    height: 900px;
-}
 
-.runner {
-    margin: 20px 0;
-    flex:1;
-    display: flex;
-    justify-content:center
-}
-
-.runner div {
-    flex: 25%;
-    margin: 10px;
-}
-
-#headline {
-    flex: 49%;
-}
-
-.runner img {
-    width: auto;
-    border: 8px ridge black;
-}
-
-.hook {
-    display: flex;
-    height:500px;
-    margin: 10px;
-}
-
-.hook img {
-    width: 99%;
-}
 /* End of Hero section styling */
