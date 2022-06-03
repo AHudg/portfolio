@@ -198,6 +198,7 @@ a:hover p {
 .child {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .grand {
@@ -260,13 +261,11 @@ textarea {
 .address {
     display:flex;
     list-style-type: none;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     font-size:1em;
 }
 
-.address li p, .address li a {
+.address li a {
     padding: 10px;
     text-decoration: none;
     color: black;
@@ -290,6 +289,10 @@ ul > p:first-child {
     width: 100vw;
     text-align: center;
     padding-bottom: 10px;
+}
+
+.child:last-child {
+    margin-bottom:10px;
 }
 /* End of styling Contact section */
 
