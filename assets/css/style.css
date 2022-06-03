@@ -32,8 +32,8 @@ header {
 }
 
 header a img {
-    height: 10vh;
-    margin: 20px;
+    height: 8vh;
+    margin: 15px 20px;
 }
 
 header h1 {
@@ -81,6 +81,7 @@ main {
     display:flex;
     flex-direction: column;
 }
+/* End of Header Section Styling */
 
 
 
@@ -103,14 +104,14 @@ main {
     width: 30%;
     height: auto;
     margin: 30px 0;
-    padding: 5px 30px;
+    padding: 5px 10px;
     background-color: black;
 }
 
 .header-box h2 {
     color: white;
     text-align: right;
-    font-size: 1em;
+    font-size: 2vh;
     font-family: 'Apple Chancery';
 }
 
@@ -129,55 +130,67 @@ main {
 /* Styling the Project Section */
 .header-box-white {
     width: 30%;
-    height: auto;
-    margin: 50px -1px;
-    padding: 20px 40px 20px 100px;
+    margin-top: 30px;
+    padding: 5px 10px;
     background-color: white;
     color: black;
     font-size: 40px;
     font-family: 'Apple Chancery';
     float: right;
+    position: absolute;
+    right: 0;
 }
 
-.parent-flex {
+.header-box-white h2 {
+    color: black;
+    font-size: 2vh;
+    font-family: 'Apple Chancery';
+}
+
+.projects {
+    margin: 30px auto 10px auto;
     display: flex;
+    justify-content: space-around;
 }
 
-.parent-flex > :first-child {
-    background-color: red;
-    height: 1000px;
-    width: 50%;
+#tree {
+    width:30%;
+    height: auto;
 }
 
-.child-flex {
-    background-color:blue;
-    height: 1000px;
-    width: 50%;
+.parent {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 
-.child-flex > :first-child {
-    background-color: yellow;
-    height: 40%;
-    width: 80%;
+.parent a {
+    margin-top: 75px;
 }
 
-.grandchild-flex {
-    background-color: pink;
-    height: 40%;
-    width: 80%;
+.parent img {
+    width: 50vw;
+    border: 2px solid white;
+}
+
+.child {
     display: flex;
-    justify-content: space-evenly;
+}
+
+.grand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.grandchild-flex div {
-    background-color: black;
-    height: 90%;
-    width: 40%;
+.grand a {
+    margin: 5px;
+}
+
+.grand img {
+    width: 20vw;
+    border: 2px solid white;
 }
 /* End of styling Projects section */
 
