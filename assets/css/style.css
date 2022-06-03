@@ -82,8 +82,11 @@ main {
 
 /* Styles the Hero section */
 .hero {
-    background-color: black;
-    width: 70vw;
+    margin: 0 auto;
+}
+
+.hero img {
+    width:80vw;
 }
 /* End of Hero section styling */
 
