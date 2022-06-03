@@ -195,7 +195,7 @@ main {
 }
 
 .grand img:hover {
-    filter:blur(5px);
+    filter:invert(1);
 }
 /* End of styling Projects section */
 
