@@ -21,7 +21,7 @@ header {
     font-family: 'Austria';
     background-color: black;
     width:100vw;
-    height: 15vh;
+    height: 13vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,12 +33,7 @@ header {
 
 header a img {
     height: 8vh;
-    margin: 15px 20px;
-}
-
-header h1 {
-    font-size: 25px;
-    margin: 40px 0 20px 0;
+    margin: 10px 20px;
 }
 
 header nav {
@@ -68,7 +63,7 @@ li:hover a {
 
 header nav ul li a {
     font-weight: lighter;
-    font-size: 10px;
+    font-size: 2.6vw;
 }
 
 header a {
@@ -171,6 +166,13 @@ main {
 .parent img {
     width: 50vw;
     border: 2px solid white;
+    filter: grayscale(100%)
+}
+
+/* Add text that appears over the image "Run Buddy - HTML, CSS" */
+.parent img:hover {
+    filter: none;
+    filter: blur(5px);
 }
 
 .child {
@@ -189,8 +191,12 @@ main {
 }
 
 .grand img {
-    width: 20vw;
+    width: 23vw;
     border: 2px solid white;
+}
+
+.grand img:hover {
+    filter:blur(5px);
 }
 /* End of styling Projects section */
 
