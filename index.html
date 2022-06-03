@@ -58,10 +58,11 @@
             <!--Creates the section to be a flexbox-->
             <section id="about-me" class="about">
                 <div class="header-box">
-                    <h2>About Me</h2>
+                    <h1>About Me</h1>
                 </div>
                 <article class="about-info">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quae dolorem quos, exercitationem fugiat similique asperiores deserunt, quas alias quis incidunt minus libero tempora eius quo eligendi dolorum qui culpa.</p>
+                    <p>Hi. My name is Andrew Hudgins. I'm 25 years old, a native Texan, and am relatively new to the world of software engineering. <br/> <br/> I graduated from Texas A&M with a bachelors of science in biomedical engineering and have been working at Memorial Hermann Hospital assembling and managing heart pumps as a circulatory support specialist. While the work is rewarding, I woke up one day and realized that the current life I have built isn't quite what I desire for myself. Quarter-life crisis? Maybe... <br/> <br/> <br/> And here I am! Changing career paths, moving back to the country, and going back to my roots. So, do excuse my lack of previous work experience in this new realm of programming. My career is but seed that has just been planted- with patience and lots of water, I'll grow it into a beautiful bloom. Along the way, I aim to produce visually appealing, efficient code for my clients. <br/> <br/> Together, we will grow your idea to fruition.
+                         </p>
                 </article>
             </section>
             <!--End of the About Me-->
@@ -71,7 +72,7 @@
             <!--Beginning of the Projects-->
             <section id="projects">
                 <div class="header-box-white">
-                    <h2>Projects</h2>
+                    <h1>Projects</h1>
                 </div>
                 <div class="projects">
                     <!-- Create the flex box for the tree + projects-->
@@ -112,13 +113,46 @@
             <!--Beginning of the Contact Me-->
             <section id="contact" class="about">
                 <div class="header-box">
-                    <h2>Contact Me!</h2>
+                    <h1>Contact</h1>
                 </div>
-                <div>
-                <!--Contact Information-->
-                </div>
-                <div>
-                <!--Contact Form/Message from Customers-->
+                <div class="child">
+                    <address>
+                    <!--Contact Information-->
+                        <ul class="address">
+                            <p>Houston, Texas</p>
+                            <li>
+                                <a href="tel:555.555.5555">Phone</a>
+                            </li>
+                            <li>
+                                <a href="mailto:andrewhudgins15@gmail.com">Email</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AHudg">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/andrew-hudgins-153164189/">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </address>
+                        
+                    <form class="contact-form">
+                    <!--Contact Form/Message from Customers-->
+                        <h2>Let's talk!</h2> 
+                        <p>Reach out below and let's grow something together!</p>
+                        <label for="name">Enter your name:</label>
+                        <input type="text" placeholder="Your name" name="name" id="name" class="form-input"/>
+                        <label for="phone">Enter your phone number:</label>
+                        <input type="tel" placeholder="Your phone number" name="phone" id="phone" class="form-input"/>
+                        <label for="email">Enter your email:</label>
+                        <input type="email" placeholder="Your email" name="email" id="email" class="form-input"/>
+
+                        <label for="contact-message">Write me a message below:</label>
+                        <textarea type="text" id="contact-message" placeholder="Tell me your ideas here!" class="form-input"></textarea>
+
+                        <button type="submit">
+                            Submit!
+                        </button>
+                    </form>
                 </div>
             </section>
             <!--End of the Contact Me -->

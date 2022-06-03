@@ -50,7 +50,7 @@ header nav ul {
 header ul li {
     padding: 10px;
     background-color: black;
-    transition: background-color 1s ease;
+    transition: background-color 0.75s ease;
 }
 
 header ul li:hover {
@@ -106,7 +106,7 @@ main {
     background-color: black;
 }
 
-.header-box h2 {
+.header-box h1 {
     color: white;
     text-align: right;
     font-size: 2vh;
@@ -115,11 +115,6 @@ main {
 
 .about-info {
     margin: 10px;
-}
-
-.about-info h3 {
-    font-size: 30px;
-    font-weight: lighter;
 }
 /* End of About section styling */
 
@@ -139,7 +134,7 @@ main {
     right: 0;
 }
 
-.header-box-white h2 {
+.header-box-white h1 {
     color: black;
     font-size: 2vh;
     font-family: 'Apple Chancery';
@@ -180,6 +175,7 @@ main {
 
 .child {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .grand {
@@ -206,7 +202,73 @@ main {
 
 
 /* Styling Contact Section */
+.contact-form {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100vw;
+    margin: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.75);
+}
 
+.contact-form h2 {
+    font-size: 2em;
+}
+
+.contact-form p {
+    font-size: 1em;
+    line-height: 1.3;
+    padding: 10px 0;
+}
+
+.form-input {
+    display:block;
+    padding:7px 0px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.75);
+}
+
+textarea {
+    height: 30vh;
+}
+
+.address {
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size:1em;
+}
+
+.address li p, .address li a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.address li {
+    padding:10px;
+    background-color: white;
+    transition: background-color .75s ease;
+}
+
+.address li:hover {
+    background-color: black;
+}
+
+li:hover a {
+    color: white;
+}
+
+ul > p:first-child {
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 10px;
+}
 /* End of styling Contact section */
 
 
