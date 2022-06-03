@@ -13,27 +13,27 @@
 body {
     color: #ffff;
     font-family: Helvetica, Arial, sans-serif;
-    display: flex;
 }
 
+/* Styles the Header Section */
 header {
     /* Create a flexbox for the header w/ child elements .logo and nav */
     font-family: 'Austria';
-    flex-direction: column;
-    width:10vw;
-    align-items: center;
     background-color: black;
+    width:100vw;
+    height: 15vh;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 9999;
-    height:30vw;
+    z-index: 1;
 }
 
 header a img {
-    width: 50%;
-    margin: 40px auto 20px auto;
+    height: 10vh;
+    margin: 20px;
 }
 
 header h1 {
@@ -47,19 +47,18 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
 
-header li {
-    padding: 10px 30px;
+header ul li {
+    padding: 10px;
     background-color: black;
     transition: background-color 1s ease;
 }
 
-header li:hover {
+header ul li:hover {
     background-color: white;
 }
 
@@ -69,7 +68,7 @@ li:hover a {
 
 header nav ul li a {
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 10px;
 }
 
 header a {
@@ -79,7 +78,6 @@ header a {
 }
 
 main {
-    width: 70vw;
     display:flex;
     flex-direction: column;
 }
@@ -98,19 +96,21 @@ main {
 /* Styles the About section */
 .about {
     background-color: white;
-    width: 70vw;
     color:black;
 }
 
 .header-box {
     width: 30%;
     height: auto;
-    margin: 50px -1px;
-    padding: 20px 100px 20px 40px;
+    margin: 30px 0;
+    padding: 5px 30px;
     background-color: black;
+}
+
+.header-box h2 {
     color: white;
     text-align: right;
-    font-size: 40px;
+    font-size: 1em;
     font-family: 'Apple Chancery';
 }
 
@@ -199,3 +199,9 @@ footer {
 footer h2 {
     float: right;
 }
+
+/* SMALLER DESKTOP SCREENS AND SMALLER - Media Query */
+@media screen and (max-width:1024px) {
+
+}
+
