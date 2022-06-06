@@ -116,6 +116,12 @@ main {
 .about-info {
     margin: 10px;
 }
+
+.about-info img {
+    width: 50vw;
+    float: left;
+    margin: 0 10px 10px 0;
+}
 /* End of About section styling */
 
 
@@ -309,7 +315,7 @@ footer h2 {
     float: right;
 }
 
-/* SMALLER DESKTOP SCREENS AND SMALLER - Media Query */
+
 @media screen and (max-width:1024px) {
 
 }
