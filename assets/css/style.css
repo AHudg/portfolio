@@ -211,7 +211,7 @@ a:hover p {
 .grand {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -366,13 +366,22 @@ footer h2 {
         font-size: 1.2em;
     }
 
-    .grand a {
-        margin-top: 5px;
+    .grand {
+        margin-top: 15px;
     }
+
+    .grand a {
+        margin: 15px;
+    }
+
 }
 
 /* For Desktops and Large Screens 1025px - 1200px */
 @media screen and (min-width:1025px) {
+    .hero img {
+        width:60vw;
+    }
+    
     .about-info img {
         height: 50vh;
         width: auto;
@@ -391,5 +400,9 @@ footer h2 {
 @media screen and (min-width:1201px) {
     header nav ul li a {
         font-size:1.2em;
+    }
+
+    .parent p {
+        font-size: 1.5em;
     }
 }
