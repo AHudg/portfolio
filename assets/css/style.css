@@ -1,6 +1,10 @@
 /* Creates CSS variables */
 :root {
-    background-color: black;
+    --primary-color: black;
+    --secondary-color: white;
+    --secondary-font: 'Apple Chancery';
+    --primary-shadow: rgba(0,0,0,0.75);
+    --secondary-shadow: rgba(255,255,255,0.75);
 }
 
 /* This is all rough putting in what I need to code- not including code for <header> attributes and such */
@@ -11,15 +15,16 @@
 }
 
 body {
-    color: #ffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Styles the Header Section */
 header {
     /* Create a flexbox for the header w/ child elements .logo and nav */
-    font-family: 'Austria';
-    background-color: black;
+    font-family: var(--secondary-font);
+    background-color: var(--primary-color);
     width:100vw;
     height: 13vh;
     display: flex;
@@ -49,16 +54,16 @@ header nav ul {
 
 header ul li {
     padding: 10px;
-    background-color: black;
+    background-color: var(--primary-color);
     transition: background-color 0.75s ease;
 }
 
 header ul li:hover {
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 header li:hover a {
-    color: black;
+    color: var(--primary-color);
 }
 
 header nav ul li a {
@@ -68,7 +73,7 @@ header nav ul li a {
 
 header a {
     text-decoration: none;
-    color: #ffff;
+    color: var(--secondary-color);
     text-align: center;
 }
 
@@ -94,8 +99,8 @@ main {
 
 /* Styles the About section */
 .about {
-    background-color: white;
-    color:black;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
     padding-bottom: 20px;
 }
 
@@ -104,14 +109,14 @@ main {
     height: auto;
     margin: 30px 0;
     padding: 5px 10px;
-    background-color: black;
+    background-color: var(--primary-color);
 }
 
 .header-box h1 {
-    color: white;
+    color: var(--secondary-color);
     text-align: right;
     font-size: 2.5vh;
-    font-family: 'Apple Chancery';
+    font-family: var(--secondary-font);
 }
 
 .about-info {
@@ -132,19 +137,19 @@ main {
     width: 30%;
     margin-top: 30px;
     padding: 5px 10px;
-    background-color: white;
-    color: black;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 40px;
-    font-family: 'Apple Chancery';
+    font-family: var(--secondary-font);
     float: right;
     position: absolute;
     right: 0;
 }
 
 .header-box-white h1 {
-    color: black;
+    color: var(--primary-color);
     font-size: 2.5vh;
-    font-family: 'Apple Chancery';
+    font-family: var(--secondary-font);
 }
 
 .projects {
@@ -171,7 +176,7 @@ main {
 
 .parent img {
     width: 50vw;
-    border: 2px solid white;
+    border: 2px solid var(--secondary-color);
     filter: grayscale(100%)
 }
 
@@ -179,8 +184,8 @@ main {
     position: absolute;
     bottom: 0;
     right: -5px;
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 10px;
     opacity: 0;
     padding: 3%;
@@ -221,7 +226,7 @@ a:hover p {
 
 .grand img {
     width: 23vw;
-    border: 2px solid white;
+    border: 2px solid var(--secondary-color);
 }
 
 .grand img:hover {
@@ -233,12 +238,12 @@ a:hover p {
 
 /* Styling Contact Section */
 .contact-form {
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 20px;
     width: 100vw;
     margin: 5%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px var(--primary-shadow);
 }
 
 .contact-form h2 {
@@ -258,7 +263,7 @@ a:hover p {
     width: 100%;
     margin-bottom: 5px;
     border-radius: 10px;
-    background-color: rgba(255,255,255,0.75);
+    background-color: var(--secondary-shadow);
 }
 
 textarea {
@@ -275,21 +280,21 @@ textarea {
 .address li a {
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
 }
 
 .address li {
     padding:10px;
-    background-color: white;
+    background-color: var(--secondary-color);
     transition: background-color .75s ease;
 }
 
 .address li:hover {
-    background-color: black;
+    background-color: var(--primary-color);
 }
 
 .address li:hover a {
-    color: white;
+    color: var(--secondary-color);
 }
 
 ul > p:first-child {
@@ -307,9 +312,9 @@ ul > p:first-child {
 
 footer {
     padding: 10px;
-    font-family: 'Apple Chancery', sans-serif;
+    font-family: var(--secondary-font), sans-serif;
     font-size:10px;
-    color:#ffff;
+    color:var(--secondary-color);
 }
 
 footer h2 {
