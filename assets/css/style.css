@@ -155,7 +155,6 @@ main {
 .projects {
     margin: 30px auto 10px auto;
     display: flex;
-    /* height: 100vh; */
     justify-content: space-around;
 }
 
@@ -192,8 +191,6 @@ main {
     padding: 3%;
     font-size: 0.5em;
     width: 80%;
-    height: 100vh;
-    overflow-y: scroll;
 }
 
 .parent > a:hover {
@@ -211,20 +208,12 @@ a:hover p {
 }
 
 .child {
-    /* height: 400px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-direction: column; */
-    /* overflow-y: scroll; */
 }
 
-.child a {
-    margin: 5px;
-    width: 40vw;
-}
-
-/* .grand {
+.grand {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -233,17 +222,16 @@ a:hover p {
 
 .grand a {
     margin: 5px;
-    width: 20vw;
 }
 
 .grand img {
-    /* height: 30vw; */
-    /* border: 2px solid var(--secondary-color);
+    width: 23vw;
+    border: 2px solid var(--secondary-color);
 }
 
 .grand img:hover {
     filter:invert(1);
-} */
+}
 /* End of styling Projects section */
 
 
@@ -253,8 +241,8 @@ a:hover p {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 20px;
-    width: 90vw;
-    margin: 5% auto;
+    width: 100vw;
+    margin: 5%;
     box-shadow: 0 0 10px var(--primary-shadow);
 }
 
