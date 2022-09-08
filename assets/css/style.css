@@ -1,413 +1,403 @@
 /* Creates CSS variables */
 :root {
-    --primary-color: black;
-    --secondary-color: white;
-    --secondary-font: 'Apple Chancery';
-    --primary-shadow: rgba(0,0,0,0.75);
-    --secondary-shadow: rgba(255,255,255,0.75);
+  --primary-color: black;
+  --secondary-color: white;
+  --secondary-font: "Apple Chancery";
+  --primary-shadow: rgba(0, 0, 0, 0.75);
+  --secondary-shadow: rgba(255, 255, 255, 0.75);
 }
 
 /* This is all rough putting in what I need to code- not including code for <header> attributes and such */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Styles the Header Section */
 header {
-    /* Create a flexbox for the header w/ child elements .logo and nav */
-    font-family: var(--secondary-font);
-    background-color: var(--primary-color);
-    width:100vw;
-    height: 13vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  /* Create a flexbox for the header w/ child elements .logo and nav */
+  font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header a img {
-    height: 8vh;
-    margin: 10px 20px;
+  height: 8vh;
+  margin: 10px 20px;
 }
 
 header nav {
-    margin: 7px 7px;
+  margin: 7px 7px;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 header ul li {
-    padding: 10px;
-    background-color: var(--primary-color);
-    transition: background-color 0.75s ease;
+  padding: 10px;
+  background-color: var(--primary-color);
+  transition: background-color 0.75s ease;
 }
 
 header ul li:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 header li:hover a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 header nav ul li a {
-    font-weight: lighter;
-    font-size: 2.6vw;
+  font-weight: lighter;
+  font-size: 2.6vw;
 }
 
 header a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    text-align: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-align: center;
 }
 
 main {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 /* End of Header Section Styling */
 
-
-
 /* Styles the Hero section */
 .hero {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .hero img {
-    width:80vw;
+  width: 80vw;
 }
 /* End of Hero section styling */
 
-
-
 /* Styles the About section */
 .about {
-    background-color: var(--secondary-color);
-    color:var(--primary-color);
-    padding-bottom: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding-bottom: 20px;
 }
 
 .header-box {
-    width: 30%;
-    height: auto;
-    margin: 30px 0;
-    padding: 5px 10px;
-    background-color: var(--primary-color);
+  width: 30%;
+  height: auto;
+  margin: 30px 0;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
 }
 
 .header-box h1 {
-    color: var(--secondary-color);
-    text-align: right;
-    font-size: 2.5vh;
-    font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  text-align: right;
+  font-size: 2.5vh;
+  font-family: var(--secondary-font);
 }
 
 .about-info {
-    margin: 10px;
+  margin: 10px;
 }
 
 .about-info img {
-    width: 50vw;
-    float: left;
-    margin: 0 10px 10px 0;
+  width: 50vw;
+  float: left;
+  margin: 0 10px 10px 0;
 }
 /* End of About section styling */
 
-
-
 /* Styling the Project Section */
 .header-box-white {
-    width: 30%;
-    margin-top: 30px;
-    padding: 5px 10px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 40px;
-    font-family: var(--secondary-font);
-    float: right;
-    position: absolute;
-    right: 0;
+  width: 30%;
+  margin-top: 30px;
+  padding: 5px 10px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 40px;
+  font-family: var(--secondary-font);
+  float: right;
+  position: absolute;
+  right: 0;
 }
 
 .header-box-white h1 {
-    color: var(--primary-color);
-    font-size: 2.5vh;
-    font-family: var(--secondary-font);
+  color: var(--primary-color);
+  font-size: 2.5vh;
+  font-family: var(--secondary-font);
 }
 
 .projects {
-    margin: 30px auto 10px auto;
-    display: flex;
-    justify-content: space-around;
+  margin: 30px auto 10px auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 #tree {
-    width:30%;
-    height: auto;
+  width: 30%;
+  height: auto;
 }
 
 .parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .parent a {
-    margin-top: 75px;
-    position: relative;
+  margin-top: 75px;
+  position: relative;
 }
 
 .parent img {
-    width: 50vw;
-    border: 2px solid var(--secondary-color);
-    filter: grayscale(100%)
+  width: 50vw;
+  border: 2px solid var(--secondary-color);
+  filter: grayscale(100%);
 }
 
 .parent p {
-    position: absolute;
-    bottom: 0;
-    right: -5px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-    opacity: 0;
-    padding: 3%;
-    font-size: 0.5em;
-    width: 80%;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  opacity: 0;
+  padding: 3%;
+  font-size: 0.5em;
+  width: 80%;
 }
 
 .parent > a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a:hover p {
-    opacity:0.7;
+  opacity: 0.7;
 }
 
 /* Add text that appears over the image "Run Buddy - HTML, CSS" */
 .parent img:hover {
-    filter: none;
-    filter: blur(5px);
+  filter: none;
+  filter: blur(5px);
 }
 
 .child {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .grand {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .grand a {
-    margin: 5px;
+  margin: 5px;
 }
 
 .grand img {
-    width: 23vw;
-    border: 2px solid var(--secondary-color);
+  width: 23vw;
+  border: 2px solid var(--secondary-color);
 }
 
-.grand img:hover {
+/* .grand img:hover {
     filter:invert(1);
-}
+} */
 /* End of styling Projects section */
-
-
 
 /* Styling Contact Section */
 .contact-form {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 20px;
-    width: 100vw;
-    margin: 5%;
-    box-shadow: 0 0 10px var(--primary-shadow);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  width: 100vw;
+  margin: 5%;
+  box-shadow: 0 0 10px var(--primary-shadow);
 }
 
 .contact-form h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .contact-form p {
-    font-size: 1em;
-    line-height: 1.3;
-    padding: 10px 0;
+  font-size: 1em;
+  line-height: 1.3;
+  padding: 10px 0;
 }
 
 .form-input {
-    display:block;
-    padding:7px 0px;
-    font-size: 1em;
-    width: 100%;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    background-color: var(--secondary-shadow);
+  display: block;
+  padding: 7px 0px;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: var(--secondary-shadow);
 }
 
 textarea {
-    height: 30vh;
+  height: 30vh;
 }
 
 .address {
-    display:flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    font-size:1em;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  font-size: 1em;
 }
 
 .address li a {
-    padding: 10px;
-    text-decoration: none;
-    color: var(--primary-color);
+  padding: 10px;
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .address li {
-    padding:10px;
-    background-color: var(--secondary-color);
-    transition: background-color .75s ease;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  transition: background-color 0.75s ease;
 }
 
 .address li:hover {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .address li:hover a {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 ul > p:first-child {
-    width: 100vw;
-    text-align: center;
-    padding-bottom: 10px;
+  width: 100vw;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .child:last-child {
-    margin-bottom:10px;
+  margin-bottom: 10px;
 }
 /* End of styling Contact section */
 
-
-
 footer {
-    padding: 10px;
-    font-family: var(--secondary-font), sans-serif;
-    font-size:10px;
-    color:var(--secondary-color);
+  padding: 10px;
+  font-family: var(--secondary-font), sans-serif;
+  font-size: 10px;
+  color: var(--secondary-color);
 }
 
 footer h2 {
-    float: right;
+  float: right;
 }
 
 /* For iPads and Tablets 481px - 768px */
-@media screen and (min-width:481px) {
-.about-info p {
-    font-size:1.2em;
-}
+@media screen and (min-width: 481px) {
+  .about-info p {
+    font-size: 1.2em;
+  }
 
-.parent p {
+  .parent p {
     font-size: 0.9em;
-}
+  }
 }
 
 /* For Small Screens and Laptops 769px - 1024px */
-@media screen and (min-width:769px) {
-    header {
-        height: 10vh;
-    }
+@media screen and (min-width: 769px) {
+  header {
+    height: 10vh;
+  }
 
-    header a img {
-        height: 7vh;
-    }
+  header a img {
+    height: 7vh;
+  }
 
-    header nav ul li a {
-        font-size:0.9em;
-    }
+  header nav ul li a {
+    font-size: 0.9em;
+  }
 
-    .header-box, .header-box-white {
-        margin:60px 0;
-    }
+  .header-box,
+  .header-box-white {
+    margin: 60px 0;
+  }
 
-    .header-box h1 {
-        font-size: 2em;
-    }
+  .header-box h1 {
+    font-size: 2em;
+  }
 
-    .header-box-white h1 {
-        font-size:0.8em;
-    }
+  .header-box-white h1 {
+    font-size: 0.8em;
+  }
 
-    .address li a {
-        padding: 10px 30px;
-        font-size: 1.2em;
-    }
+  .address li a {
+    padding: 10px 30px;
+    font-size: 1.2em;
+  }
 
-    .parent a {
-        margin-top: 120px;
-    }
+  .parent a {
+    margin-top: 120px;
+  }
 
-    .child p {
-        font-size: 1.2em;
-    }
+  .child p {
+    font-size: 1.2em;
+  }
 
-    .grand {
-        margin-top: 15px;
-    }
+  .grand {
+    margin-top: 15px;
+  }
 
-    .grand a {
-        margin: 15px;
-    }
-
+  .grand a {
+    margin: 15px;
+  }
 }
 
 /* For Desktops and Large Screens 1025px - 1200px */
-@media screen and (min-width:1025px) {
-    .hero img {
-        width:60vw;
-    }
-    
-    .about-info img {
-        height: 50vh;
-        width: auto;
-    }
+@media screen and (min-width: 1025px) {
+  .hero img {
+    width: 60vw;
+  }
 
-    .parent a {
-        margin-top: 150px;
-    }
+  .about-info img {
+    height: 50vh;
+    width: auto;
+  }
 
-    .grand a {
-        margin-top: 10px;
-    }
+  .parent a {
+    margin-top: 150px;
+  }
+
+  .grand a {
+    margin-top: 10px;
+  }
 }
 
 /* For Extra Large Screens and TVs 1201px and more */
-@media screen and (min-width:1201px) {
-    header nav ul li a {
-        font-size:1.2em;
-    }
+@media screen and (min-width: 1201px) {
+  header nav ul li a {
+    font-size: 1.2em;
+  }
 
-    .parent p {
-        font-size: 1.5em;
-    }
+  .parent p {
+    font-size: 1.5em;
+  }
 }

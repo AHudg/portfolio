@@ -1,172 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-        <link rel="images" href="./assets/images/"/>
-        <title>Andrew Dawson - Portfolio</title>
-    </head>
-    
-    <!-- <body> is made a flexbox using CSS to create a "sticky" sidebar header -->
-    <!-- Contains two flex children: <header> and <main> -->
-    <body>
-        <!-- Beginning of Header -->
-        <!-- <header> is a flexbox w/ two flex children <h1> and <ul> -->
-        <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="images" href="./assets/images/" />
+    <title>Andrew Dawson - Portfolio</title>
+  </head>
 
-            <!-- Places the logo / reference to home page -->
-            <a href="./index.html">
-                <img src="./assets/images/littlelogo.jpg"/>
+  <!-- <body> is made a flexbox using CSS to create a "sticky" sidebar header -->
+  <!-- Contains two flex children: <header> and <main> -->
+  <body>
+    <!-- Beginning of Header -->
+    <!-- <header> is a flexbox w/ two flex children <h1> and <ul> -->
+    <header>
+      <!-- Places the logo / reference to home page -->
+      <a href="./index.html">
+        <img src="./assets/images/littlelogo.jpg" />
+      </a>
+
+      <!--Creates the navigation links on the header-->
+      <nav>
+        <!--Creates my navigation links for the website-->
+        <ul>
+          <!--Utilizing an unordered list for the pages-->
+          <li>
+            <!--List Item Element-->
+            <a href="#about-me">About</a>
+            <!--Anchor Element to link the corresponding section-->
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a
+              href="./assets/images/oldresume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--End of Header/Navigation-->
+
+    <main>
+      <!--Beginning of Hero--->
+      <section class="hero">
+        <img src="./assets/images/hero.jpg" />
+      </section>
+      <!--End of the Hero-->
+
+      <!-- Beginning of the About Me-->
+      <!--Creates the section to be a flexbox-->
+      <section id="about-me" class="about">
+        <div class="header-box">
+          <h1>About Me</h1>
+        </div>
+        <article class="about-info">
+          <img src="./assets/images/aboutphoto.jpg" />
+          <p>
+            Hi. My name is Andrew Hudgins. I'm 25 years old, a native Texan, and
+            am relatively new to the world of software engineering. <br />
+            <br />
+            I graduated from Texas A&M with a bachelors of science in biomedical
+            engineering with a focus on bioinstrumentation, and have been
+            working at Memorial Hermann Hospital assembling and managing heart
+            pumps as a circulatory support specialist. While the work is
+            rewarding, I woke up one day and realized that the current life I
+            have built isn't quite what I desire for myself. Quarter-life
+            crisis? Maybe... <br />
+            <br />
+            <br />
+            And here I am! Changing career paths, trying to afford a home with a
+            yard in today's econmy, and going back to my roots. So, do excuse my
+            lack of previous work experience in this new realm of programming.
+            My career is but a seed that has just been planted- with patience
+            and lots of water, I'll grow it into a beautiful bloom. Along the
+            way, I aim to produce visually appealing, efficient code for my
+            clients. <br />
+            <br />
+            Together, we will grow your idea to fruition.
+          </p>
+        </article>
+      </section>
+      <!--End of the About Me-->
+
+      <!--Beginning of the Projects-->
+      <section id="projects">
+        <div class="header-box-white">
+          <h1>Projects</h1>
+        </div>
+        <div class="projects">
+          <!-- Create the flex box for the tree + projects-->
+          <img src="./assets/images/tree_edit.jpg" id="tree" />
+          <article class="parent">
+            <!-- Large initial image -->
+            <a
+              href="https://ahudg.github.io/recipe-box/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/images/recipeBox.jpg" />
+              <p>Recipe Box - HTML, CSS, Javascript</p>
             </a>
+            <div class="child">
+              <!-- Medium box other projects -->
+              <div class="grand">
+                <a
+                  href="https://ahudg.github.io/recipe-box/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./assets/images/recipeBox.jpg" />
+                  <p>Recipe Box - HTML, CSS, Javascript</p>
+                </a>
+                <a>
+                  <img src="./assets/images/snakeplant.jpg" />
+                </a>
+              </div>
+              <div class="grand">
+                <!-- Two image/link/projects -->
+                <a>
+                  <img src="./assets/images/snakeplant.jpg" />
+                </a>
+                <a>
+                  <img src="./assets/images/snakeplant.jpg" />
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--End of the Projects-->
 
-            <!--Creates the navigation links on the header-->
-            <nav>
-                <!--Creates my navigation links for the website-->
-                <ul>
-                    <!--Utilizing an unordered list for the pages-->
-                    <li>
-                        <!--List Item Element-->
-                        <a href="#about-me">About</a>
-                        <!--Anchor Element to link the corresponding section-->
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="./assets/images/oldresume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                    </li>
-                </ul>
-            </nav>
+      <!--Beginning of the Contact Me-->
+      <section id="contact" class="about">
+        <div class="header-box">
+          <h1>Contact</h1>
+        </div>
+        <div class="child">
+          <address>
+            <!--Contact Information-->
+            <ul class="address">
+              <li>
+                <a href="tel:555.555.5555">Phone</a>
+              </li>
+              <li>
+                <a href="mailto:andrewhudgins15@gmail.com">Email</a>
+              </li>
+              <li>
+                <a href="https://github.com/AHudg">GitHub</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/andrew-hudgins-153164189/"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </address>
 
-        </header>
-        <!--End of Header/Navigation-->
+          <form class="contact-form">
+            <!--Contact Form/Message from Customers-->
+            <h2>Let's talk!</h2>
+            <p>Reach out below and let's grow something together!</p>
+            <label for="name">Enter your name:</label>
+            <input
+              type="text"
+              placeholder="Your name"
+              name="name"
+              id="name"
+              class="form-input"
+            />
+            <label for="phone">Enter your phone number:</label>
+            <input
+              type="tel"
+              placeholder="Your phone number"
+              name="phone"
+              id="phone"
+              class="form-input"
+            />
+            <label for="email">Enter your email:</label>
+            <input
+              type="email"
+              placeholder="Your email"
+              name="email"
+              id="email"
+              class="form-input"
+            />
 
-        <main>
-            <!--Beginning of Hero--->
-            <section class="hero">
-                <img src="./assets/images/hero.jpg"/>
-            </section>
-            <!--End of the Hero-->
+            <label for="contact-message">Write me a message below:</label>
+            <textarea
+              type="text"
+              id="contact-message"
+              placeholder="Tell me your ideas here!"
+              class="form-input"
+            ></textarea>
 
+            <button type="submit">Submit!</button>
+          </form>
 
+          <p>Houston, Texas</p>
+        </div>
+      </section>
+      <!--End of the Contact Me -->
 
-            <!-- Beginning of the About Me-->
-            <!--Creates the section to be a flexbox-->
-            <section id="about-me" class="about">
-                <div class="header-box">
-                    <h1>About Me</h1>
-                </div>
-                <article class="about-info">
-                    <img src="./assets/images/aboutphoto.jpg"/>
-                    <p>Hi. My name is Andrew Hudgins. I'm 25 years old, a native Texan, and am relatively new to the world of software engineering. <br/> <br/> I graduated from Texas A&M with a bachelors of science in biomedical engineering with a focus on bioinstrumentation, and have been working at Memorial Hermann Hospital assembling and managing heart pumps as a circulatory support specialist. While the work is rewarding, I woke up one day and realized that the current life I have built isn't quite what I desire for myself. Quarter-life crisis? Maybe... <br/> <br/> <br/> And here I am! Changing career paths, trying to afford a home with a yard in today's econmy, and going back to my roots. So, do excuse my lack of previous work experience in this new realm of programming. My career is but a seed that has just been planted- with patience and lots of water, I'll grow it into a beautiful bloom. Along the way, I aim to produce visually appealing, efficient code for my clients. <br/> <br/> Together, we will grow your idea to fruition.</p>
-                </article>
-            </section>
-            <!--End of the About Me-->
+      <!--Beginning of Resume-->
 
+      <!--End of Resume-->
 
-
-            <!--Beginning of the Projects-->
-            <section id="projects">
-                <div class="header-box-white">
-                    <h1>Projects</h1>
-                </div>
-                <div class="projects">
-                    <!-- Create the flex box for the tree + projects-->
-                    <img src="./assets/images/tree_edit.jpg" id="tree"/>
-                    <article class="parent">
-                            <!-- Large initial image -->
-                            <a href="https://ahudg.github.io/recipe-box/" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/images/recipeBox.jpg"/>
-                                <p>Recipe Box - HTML, CSS, Javascript</p>
-                            </a>
-                        <div class="child">
-                            <!-- Medium box other projects -->
-                            <div class="grand">
-                                <a>
-                                    <img src="./assets/images/snakeplant.jpg"/>
-                                </a>
-                                <a>
-                                    <img src="./assets/images/snakeplant.jpg"/>
-                                </a>
-                            </div>
-                            <div class="grand">
-                                <!-- Two image/link/projects -->
-                                <a>
-                                    <img src="./assets/images/snakeplant.jpg"/>
-                                </a>
-                                <a>
-                                    <img src="./assets/images/snakeplant.jpg"/>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <!--End of the Projects-->
-
-
-
-            <!--Beginning of the Contact Me-->
-            <section id="contact" class="about">
-                <div class="header-box">
-                    <h1>Contact</h1>
-                </div>
-                <div class="child">
-                    <address>
-                    <!--Contact Information-->
-                        <ul class="address">
-                            <li>
-                                <a href="tel:555.555.5555">Phone</a>
-                            </li>
-                            <li>
-                                <a href="mailto:andrewhudgins15@gmail.com">Email</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/AHudg">GitHub</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/andrew-hudgins-153164189/">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </address>
-                        
-                    <form class="contact-form">
-                    <!--Contact Form/Message from Customers-->
-                        <h2>Let's talk!</h2> 
-                        <p>Reach out below and let's grow something together!</p>
-                        <label for="name">Enter your name:</label>
-                        <input type="text" placeholder="Your name" name="name" id="name" class="form-input"/>
-                        <label for="phone">Enter your phone number:</label>
-                        <input type="tel" placeholder="Your phone number" name="phone" id="phone" class="form-input"/>
-                        <label for="email">Enter your email:</label>
-                        <input type="email" placeholder="Your email" name="email" id="email" class="form-input"/>
-
-                        <label for="contact-message">Write me a message below:</label>
-                        <textarea type="text" id="contact-message" placeholder="Tell me your ideas here!" class="form-input"></textarea>
-
-                        <button type="submit">
-                            Submit!
-                        </button>
-                    </form>
-
-                    <p>Houston, Texas</p>
-                </div>
-            </section>
-            <!--End of the Contact Me -->
-
-            <!--Beginning of Resume-->
-
-            <!--End of Resume-->
-
-         <!--Start of the Footer Section-->
-         <footer>
-             <h2>Andrew Dawson's Programming Portfolio</h2>
-         </footer>
-         <!--End of the Footer Section-->
-        </main>
-    </body>
+      <!--Start of the Footer Section-->
+      <footer>
+        <h2>Andrew Dawson's Programming Portfolio</h2>
+      </footer>
+      <!--End of the Footer Section-->
+    </main>
+  </body>
 </html>
